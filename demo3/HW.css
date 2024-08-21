@@ -1,0 +1,334 @@
+/* 给总的页面分成三个大块；top1 top2 top3
+topcolor;顶部渐变颜色的1px装饰
+top1nav;顶部导航栏一级类
+top1nav2;顶部导航栏的二级类，居中包含其子元素
+nav-left;顶部导航栏的三级类，在左侧显示其子元素
+nav-rigth;顶部导航栏的三级类，在右侧显示其子元素
+GG;top1下面主广告图的小广告栏部分
+
+
+ */
+
+
+body {
+    user-select: none;
+    background-color: #f1f1f1;
+}
+
+
+.topcolor {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgb(255, 57, 57), rgb(248, 248, 104));
+}
+
+.top1nav {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+}
+
+.top1nav2 {
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    background-color: #333;
+}
+
+.top1nav2 span {
+    color: #757373;
+    margin: 0 3.6px;
+
+
+}
+
+.nav-left li {
+    float: left;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.nav-left {
+    line-height: 30px;
+    font-size: 12px;
+    color: #a2a2a2;
+
+}
+
+.nav-rigth li {
+    float: right;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.nav-rigth {
+    line-height: 30px;
+    font-size: 12px;
+    color: #a2a2a2;
+
+}
+
+.top1img {
+    width: 100%;
+    height: 500px;
+}
+
+.top1img img {
+    width: 100%;
+    height: 500px;
+
+}
+
+.warp2 {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    /* 同时实现水平和垂直居中 */
+}
+
+.text-p {
+    font-size: 22px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+
+.top2-a1 {
+    text-align: center;
+}
+
+.top2-a1 li img {
+    width: 290px;
+    height: 220px;
+}
+
+.top2-a2 {
+    text-align: center;
+}
+
+.top2-a2 li img {
+    width: 230px;
+    height: 220px;
+}
+
+.top2-a2 li {
+    margin: 0 0 10px 10px;
+    width: 300px;
+    height: 300px;
+
+    background-color: #f7f9f9;
+}
+
+
+.top2-a1 li {
+    margin: 0 0 10px 10px;
+    width: 300px;
+    height: 300px;
+
+    background-color: #f7f9f9;
+}
+
+
+.text1 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.text2 {
+    text-align: center;
+    color: #7f7c7c;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.top2-a1 ul {
+    display: flex;
+}
+
+.top2-a2 ul {
+    display: flex;
+}
+
+
+.warp2 li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.warp2 li {
+    transition: all 0.2s linear;
+    border-radius: 5px;
+
+}
+
+
+.GG {
+    margin-top: 5px;
+    width: 81%;
+    margin-left: 10%;
+    height: 200px;
+    background-color: #f7f9f9;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+
+}
+
+.GG:hover {
+    box-shadow: 0 12px 12px rgba(106, 103, 103, 0.1);
+
+}
+
+
+.G2 ul img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+
+
+.top3 {
+    background-color: #f7f9f9;
+    width: 100%;
+    height: 300px;
+}
+
+.div-top {
+    width: 79%;
+    margin: auto;
+}
+
+.div1 {
+    font-size: 18px;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(221, 215, 215);
+
+}
+
+
+.div1 ul {
+    display: flex;
+
+}
+
+.div1 ul li {
+    padding: 35px 75px 20px 75px;
+
+}
+
+.div2 {
+    margin: 20px 0px;
+    background-color: #f7f9f9;
+    width: 75%;
+    height: 200px;
+
+}
+
+.div2-2 ul {
+    float: left;
+    width: 16%;
+    padding-top: 20px;
+    color: #8c8b8b;
+    font-weight: 300;
+
+}
+
+.div2-1 li {
+    float: left;
+    width: 16%;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.div2-3 {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 70%;
+}
+
+.div2-3 p {
+    font-size: 23px;
+    font-weight: 500;
+
+}
+
+.div2-3 {
+    display: flex;
+    Flex-direction: column;
+    font-size: 13px;
+    border-left: #d5d0d0 solid 1px;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.bt1 {
+    margin: auto;
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 20px;
+    color: #f4f4f4;
+    line-height: 35px;
+}
+
+.slick-carousel img {
+    width: 100%;
+    height: 500px;
+    animation: slide 1s ease-in-out infinite;
+}
+
+
+.nav-left li:hover {
+    color: #fcf9f9;
+}
+
+.nav-rigth li:hover {
+    color: #fcf9f9;
+}
+
+.gwc1 {
+    font-size: 13px;
+    padding: 0px 7px;
+
+
+}
+
+.gwc1:hover {
+    background-color: #696565;
+    border-radius: 3px;
+}
+
+.gwc2 {
+    width: 200px;
+    height: 80px;
+    background-color: #393737;
+    position: absolute;
+    right: 152px;
+    border-radius: 0px 0px 3px 3px;
+    display: none;
+}
+
+.gwc2 p {
+    padding: 20px;
+}
+
+.gwc1:hover>.gwc2 {
+    display: block;
+}
+
+.div2-2 li:hover {
+    color: #333;
+
+}
+
+.bt1:hover {
+    background-color: #c1c1c1;
+    color: #333;
+}

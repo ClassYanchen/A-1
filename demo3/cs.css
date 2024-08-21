@@ -1,0 +1,106 @@
+/* 1. 盒子模型的统一 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. 移除所有内外边距 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+figure,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. 移除列表项的默认符号 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 4. 移除默认的链接样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. 默认字体样式和大小 */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/* 6. 使按钮和输入框看起来更原生 */
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+/* 7. 表单元素去除边角 */
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+/* 8. 移除按钮和输入框的内边距和外边距 */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    cursor: pointer;
+}
+
+button[disabled],
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
+    cursor: default;
+}
+
+/* 9. 移除表单元素的默认边框和背景 */
+input,
+select,
+textarea {
+    border: none;
+    background: none;
+}
+
+/* 10. 表格的边框合并为一条 */
+table {
+    border-collapse: collapse;
+}
+
+/* 11. 清除浮动 */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
